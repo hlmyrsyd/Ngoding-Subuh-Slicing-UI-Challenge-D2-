@@ -1,7 +1,6 @@
 html    {
     box-sizing: border-box;
     background-color: white;
-    font-family: 'DM Sans', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
 }
@@ -11,6 +10,8 @@ html    {
     margin: 0;
 }
 
+/* Nav Start */
+
 .nav_container  {
     position: absolute;
     width: 100%;
@@ -18,12 +19,37 @@ html    {
     padding: 0px 150px 0px 150px;
     margin-top: 58px;
     display: flex;
+    align-items: center;
+    height: auto;
 }
 
 .nav_left   {
-    height: auto;
     color: #101C45;
     margin-right: 93px;
+    font-weight: 500;
+}
+
+.nav_mid    {
+    display: inline-block;
+    margin-right: 255px;
+}
+
+.nav_mid li {
+    margin-right: 50px;
+}
+
+.nav_right  {
+    margin-left: 82px;
+    height: 37px;
+}
+
+.nav_right li   {
+    padding: 8px 20px;
+}
+
+.book_now   {   
+    margin-left: 15px;
+    border: 1px solid #101C45;
 }
 
 .logo   {
@@ -32,7 +58,7 @@ html    {
     align-items: center;
 }
 
-svg     {
+.svg_logo     {
     margin-right: 15px;
 }
 
@@ -52,5 +78,153 @@ li  {
     font-family: 'DM Sans', sans-serif;
 }
 
-.right  {
+.nav_mid ul li a {
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
 }
+
+.nav_right ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_mid ul li a:hover {
+    font-weight: bold;
+    transition: .3s;
+}
+
+/* Nav End */
+
+/* Main Section Start */
+
+.frame_one  {
+    font-family: 'DM Sans', sans-serif;
+    max-width: 457px;
+    line-height: normal;
+    padding-top: 256px;
+    padding-left: 150px;
+    color: #101C45;
+}
+
+h1  {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.frame_one p   {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+button  {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 15px 35px;
+    background-color: #203271;
+    color: white;
+    border: none;
+}
+
+button:hover    {
+    color: #203271;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid #203271;
+    transition: .3s;
+}
+
+.embed  {
+    position: absolute;
+    height: 142px;
+    width: 252px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    top: 218px;
+    left: 663px;
+    font-size: 12px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.embed p    {
+    color:#101C45;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-top: 12px;
+}
+
+.profile    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_id {
+    display: flex;
+    align-items: center;
+}
+
+.profile_id h2  {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.svg_bg {
+    position: absolute;
+    top: 18px;
+    left: 764px;
+    z-index: -2;
+}
+
+.nurse  {
+    position: absolute;
+    top: 157px;
+    left: 820px;
+    z-index: -1;
+}
+/* Main Section End */
+
+/* Footer Start */
+.footer {
+    width: 1141px;
+    position: absolute;
+    top: 865px;
+    left: 150px;
+    padding: 40px;
+    background-color:#203271;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.online, .medication, .virtual  {
+    width: 359px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 25px;
+}
+
+.footer h2  {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer p   {
+    font-size: 16px;
+    font-weight: 10;
+}
+
+/* Footer End */
